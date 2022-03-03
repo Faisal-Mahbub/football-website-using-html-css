@@ -1,0 +1,72 @@
+/* -----------
+    Utilities 
+   ----------- */
+body{
+    margin: 0 0;
+    background-color: white;
+}
+ 
+a{
+    text-decoration: none;
+}
+
+button{
+    background-color: #E02C6D;
+    border: 1px solid #E02C6D;
+    width: 168px;
+    height: 44px;
+}
+
+.player-photo{
+    width: 300px;
+    height: 256px;
+}
+
+h2{
+    color: #18191F;
+}
+    
+/* ---------------
+    Header-Banner 
+   --------------- */
+.header-banner{
+    background-color: #2D25A0;
+    height: 870px;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation-menu{
+    display: flex;
+    flex-direction: row;
+}
+
+nav>ul>li{
+    list-style: none;
+}
+
+/* ---------------
+    Players 
+   --------------- */
+.players-section{
+    margin-top: 70px;
+}
+
+.players-row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1050px;
+    margin: auto;
+}
+
+.player-info{
+    width: 300px;
+    height: 474px;
+    border: 1px solid black; /* Added for Visibility */
+    padding: 15px;
+    margin: 0 30px 30px 0;
+    /* box-shadow: 10px 10px 40% 10px rgba(rgb(0, 0, 0), green, blue, 15%); */
+}
