@@ -8,57 +8,108 @@ body{
  
 a{
     text-decoration: none;
+    color: white;
 }
 
-button{
-    background-color: #E02C6D;
-    border: 1px solid #E02C6D;
-    width: 168px;
-    height: 44px;
-}
-
-.player-photo{
-    width: 300px;
-    height: 256px;
-    border-radius: 5px;
+h1{
+    color: white;
+    font-size: 64px;
 }
 
 h2{
     color: #18191F;
+    font-size: 48px;
+    margin-bottom: -10px;
+}
+
+h3{
+    color: #18191F;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: -5px;
 }
 
 p{
     color: #6C6C6C;
+    text-align: justify;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #E02C6D;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+}
+
+.button:hover{
+    background-color: darkred;
 }
     
-/* ---------------
-    Header-Banner 
-   --------------- */
-.header-banner{
+/* ----------------
+    Banner Section 
+   ---------------- */
+#header-banner{
     background-color: #2D25A0;
-    height: 870px;
+    height: 700px;
 }
 
-.navigation{
+#navigation-container{
     display: flex;
     flex-direction: row;
+    margin-left: 120px;
 }
 
-.navigation-menu{
+#navigation-menu{
     display: flex;
     flex-direction: row;
+    margin-top: 40px;
+    padding-left: 0px;
 }
 
 nav>ul>li{
     list-style: none;
+    margin-right: 40px;
 }
 
-/* ---------------
-    Players 
-   --------------- */
-   .players-section{
-       margin-top: 70px;
-    }
+.nav-button{
+    margin-left: 450px;
+}
+
+.fa-arrow-right-to-bracket{
+    margin-right: 10px;
+}
+
+#below-navigation-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#banner-column-left{
+    margin-left: 120px;
+}
+
+.fa-arrow-right{
+    margin-left: 10px;
+}
+
+.banner-photo{
+    width: 560px;
+    height: 440px;
+    margin-right: 120px;
+    margin-top: 50px;
+}
+
+/* -----------------
+    Players Section
+   ----------------- */
+#players-section{
+    margin-top: 70px;
+}
 
 .players-row{
     display: grid;
@@ -69,31 +120,120 @@ nav>ul>li{
 
 .player-info{
     width: 300px;
-    height: 435px;
+    height: 440px;
     padding: 15px;
     margin: 0 30px 30px 0;
     border-radius: 5px;
     box-shadow: 1px 1px 40px rgba(0, 0, 0, .15);
 }
-/* ---------------
-    Footer 
-   --------------- */
+
+.player-photo{
+    width: 300px;
+    height: 256px;
+    border-radius: 5px;
+}
+
+.player-info:hover{
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+}
+
+/* -----------------
+    Tickets Section 
+   ----------------- */
+#tickets-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#tickets-left-column{
+    padding-top: 50px;
+    width: 500px;
+    height: 435px;
+    margin-left: 15px;
+    margin-right: 70px;
+}
+
+#tickets-photo{
+    width: 500px;
+    height: 380px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 40px rgba(0, 0, 0, .15);
+}
+
+#tickets-photo:hover{
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+    box-shadow: 1px 1px 40px rgba(0, 0, 0, .8);
+}
+
+/* --------------------
+    Highlights Section
+   -------------------- */
+#highlights-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#highlights-photo{
+    width: 500px;
+    height: 380px;
+    border-radius: 5px;
+    margin-left: 90px;
+}
+
+#highlights-photo:hover{
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+    box-shadow: 1px 1px 40px rgba(0, 0, 0, .8);
+}
+
+#highlights-right-column{
+    padding-top: 50px;
+    width: 500px;
+    height: 435px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+/* ----------------
+    Footer Section
+   ---------------- */
 footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #logo{
     width: 400px;
     height: 100px;
+    margin-bottom: 10px;
 }
 
 .social-media-icons{
     width: 32px;
     height: 32px;
+    margin-right: 10px;
+}
+
+.social-media-icons:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+    background-color: lightblue;
+    border-radius: 50px;
 }
 
 footer>p{
     color: black;
 }
+
+/* ------------
+    Responsive 
+   ------------ */
