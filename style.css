@@ -64,13 +64,13 @@ p{
         background-color: #2D25A0;
     }
     25%{
-        background-color: yellow;
+        background-color: gray;
     }
     50%{
-        background-color: red;
+        background-color: #BC544B;
     }
     75%{
-        background-color: green;
+        background-color: maroon;
     }
     100%{
         background-color: #2D25A0;
@@ -79,7 +79,7 @@ p{
 
 #header-banner{
     background-color: #2D25A0;
-    height: 700px;
+    height: 650px;
     animation: changer 10s linear 0s infinite;
 }
 
@@ -87,6 +87,7 @@ p{
     display: flex;
     flex-direction: row;
     margin-left: 120px;
+    justify-content: space-between;
 }
 
 #navigation-menu{
@@ -99,10 +100,6 @@ p{
 nav>ul>li{
     list-style: none;
     margin-right: 40px;
-}
-
-.nav-button{
-    margin-left: 450px;
 }
 
 .fa-arrow-right-to-bracket{
@@ -187,7 +184,7 @@ nav>ul>li{
 #tickets-photo:hover{
     transform: scale(1.1);
     transition: 1s ease-in-out;
-    box-shadow: 1px 1px 40px rgba(0, 0, 0, .8);
+    box-shadow: 1px 1px 40px rgba(68, 0, 255, 0.5);
 }
 
 /* --------------------
@@ -209,7 +206,7 @@ nav>ul>li{
 #highlights-photo:hover{
     transform: scale(1.1);
     transition: 1s ease-in-out;
-    box-shadow: 1px 1px 40px rgba(0, 0, 0, .8);
+    box-shadow: 1px 1px 40px rgba(68, 0, 255, 0.5);
 }
 
 #highlights-right-column{
