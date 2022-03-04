@@ -53,14 +53,34 @@ p{
 
 .button:hover{
     background-color: darkred;
+    transition: 1s ease-in-out;
 }
     
 /* ----------------
     Banner Section 
-   ---------------- */
+   ---------------- */   
+@keyframes changer {
+    0%{
+        background-color: #2D25A0;
+    }
+    25%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: red;
+    }
+    75%{
+        background-color: green;
+    }
+    100%{
+        background-color: #2D25A0;
+    }
+}
+
 #header-banner{
     background-color: #2D25A0;
     height: 700px;
+    animation: changer 10s linear 0s infinite;
 }
 
 #navigation-container{
@@ -146,7 +166,6 @@ nav>ul>li{
 #tickets-container{
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
     margin-top: 80px;
 }
 
@@ -183,7 +202,7 @@ nav>ul>li{
 #highlights-photo{
     width: 500px;
     height: 380px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-left: 90px;
 }
 
