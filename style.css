@@ -5,7 +5,13 @@ body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
- 
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 a{
     text-decoration: none;
     color: white;
@@ -109,20 +115,16 @@ nav>ul>li{
    ----------------- */
 #players-section{
     margin-top: 70px;
-}
-
-.players-row{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 1050px;
-    margin: auto;
+    column-gap: 30px;
+    row-gap: 30px;
 }
 
 .player-info{
     width: 300px;
     height: 440px;
     padding: 15px;
-    margin: 0 30px 30px 0;
     border-radius: 5px;
     box-shadow: 1px 1px 40px rgba(0, 0, 0, .15);
 }
@@ -144,7 +146,7 @@ nav>ul>li{
 #tickets-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     margin-top: 80px;
 }
 
@@ -175,7 +177,6 @@ nav>ul>li{
 #highlights-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     margin-top: 40px;
 }
 
@@ -234,6 +235,138 @@ footer>p{
     color: black;
 }
 
-/* ------------
-    Responsive 
-   ------------ */
+/* ----------------------------
+    Responsiveness for Devices 
+   ---------------------------- */
+
+/* Mobile Devices */
+@media only screen and (max-width: 688px) {
+    /* Banner Section */
+    #header-banner{
+        height: 1050px;
+        display: flex;
+        align-items: center;
+    }
+
+    #navigation-menu>.menu{
+        display: none;
+    }
+
+    #below-navigation-container{
+        flex-direction: column;
+    }
+
+    #banner-column-left{
+        margin-left: 0px;
+    }
+
+    .banner-photo{
+        padding-top: 50px;
+    }
+
+    /* Players Section */
+    #players-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Tickets Section */
+    #tickets-container{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    #tickets-left-column{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    #tickets-photo{
+        margin-top: -125px;
+        margin-bottom: 25px;
+    }
+
+    /* Highlight Section */
+    #highlights-container{
+        flex-direction: column;
+    }
+    
+    #highlights-photo{
+        margin-left: 0;
+    }
+    
+    #highlights-right-column{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: -50px;
+        margin-bottom: -150px;
+    }
+
+    /* Footer Section */
+    footer{
+        align-items: center;
+    }
+}
+
+/* Tablet Devices */
+@media only screen and (min-width:689px) and (max-width: 992px) {
+    /* Banner Section */
+    #header-banner{
+        height: 600px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #navigation-menu>.menu{
+        display: none;
+    }
+    
+    #banner-column-left{
+        margin-left: 0px;
+    }
+    
+    .banner-photo{
+        padding-top: 50px;
+    }
+
+    /* Players Section */
+    #players-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Tickets Section */
+    #tickets-container{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    #tickets-left-column{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    #tickets-photo{
+        margin-top: -125px;
+        margin-bottom: 25px;
+    }
+
+    /* Highlight Section */
+    #highlights-container{
+        flex-direction: column;
+    }
+    
+    #highlights-photo{
+        margin-left: 0;
+    }
+    
+    #highlights-right-column{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: -50px;
+        margin-bottom: -150px;
+    }
+
+    /* Footer Section */
+    footer{
+        align-items: center;
+    }
+}
